@@ -32,7 +32,7 @@ contract Voting {
     return totalVotes[candidate];
   }
 
-  // Esta função incrementa a quantidade de votos recebidas por um candidato
+  // This function increases the amount of votes received by a candidate
   function insertVote(bytes32 candidate) public {
     require(isValid(candidate));
     totalVotes[candidate] += 1;
