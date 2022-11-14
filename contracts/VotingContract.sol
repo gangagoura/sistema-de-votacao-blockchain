@@ -26,7 +26,7 @@ contract Voting {
     candidates = names;
   }
 
-  // Retorna a quantidade de votos recebidos por um candidato
+  // Returns the number of votes received by a candidate
   function totalVotesFor(bytes32 candidate) view public returns (uint256) {
     require(isValid(candidate));
     return totalVotes[candidate];
